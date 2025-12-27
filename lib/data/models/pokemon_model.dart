@@ -9,7 +9,8 @@ class PokemonModel {
 
   factory PokemonModel.fromJson(Map<String, dynamic> json) {
     return PokemonModel(
-      id: json['id'] ?? '0',
+      id: json['id'].toString(),
+
       name: json['name'] ?? 'Unknown',
       image: json['image'] ?? 'https://via.placeholder.com/150',
     );

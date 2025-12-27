@@ -1,10 +1,10 @@
 import 'package:flutter_application_1/data/models/pokemon_model.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 
-class PokemonRemoteDatasource {
+class PokemonRemoteDataSource {
   final GraphQLClient client;
 
-  PokemonRemoteDatasource({required this.client});
+  PokemonRemoteDataSource({required this.client});
 
   final String _getAllPokemonQuery = """ 
     query {
